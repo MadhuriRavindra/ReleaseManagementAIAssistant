@@ -1,0 +1,141 @@
+[
+  {
+    "id": "APP-001",
+    "name": "Customer Portal",
+    "tier": 1,
+    "owning_team": "Digital Channels",
+    "systems": [
+      "portal-web-prod"
+    ]
+  },
+  {
+    "id": "APP-002",
+    "name": "Payments Gateway",
+    "tier": 1,
+    "owning_team": "Payments",
+    "systems": [
+      "payments-api-prod",
+      "ora-prd-db-01"
+    ]
+  },
+  {
+    "id": "APP-003",
+    "name": "Order Management",
+    "tier": 1,
+    "owning_team": "Commerce Core",
+    "systems": [
+      "oms-app-prod",
+      "ora-prd-db-01"
+    ]
+  },
+  {
+    "id": "APP-004",
+    "name": "Inventory API",
+    "tier": 2,
+    "owning_team": "Supply Chain",
+    "systems": [
+      "inventory-api-prod",
+      "pg-prd-db-02"
+    ]
+  },
+  {
+    "id": "APP-005",
+    "name": "Auth Service",
+    "tier": 1,
+    "owning_team": "Platform Security",
+    "systems": [
+      "auth-idp-prod"
+    ]
+  },
+  {
+    "id": "APP-006",
+    "name": "Notification Service",
+    "tier": 2,
+    "owning_team": "Platform",
+    "systems": [
+      "notify-prod",
+      "kafka-prd-cluster"
+    ]
+  },
+  {
+    "id": "APP-007",
+    "name": "Mobile App Backend",
+    "tier": 1,
+    "owning_team": "Digital Channels",
+    "systems": [
+      "mobile-bff-prod"
+    ]
+  },
+  {
+    "id": "APP-008",
+    "name": "Reporting Warehouse",
+    "tier": 3,
+    "owning_team": "Data & Analytics",
+    "systems": [
+      "dwh-prod"
+    ]
+  },
+  {
+    "id": "APP-009",
+    "name": "HR Portal",
+    "tier": 3,
+    "owning_team": "Corporate IT",
+    "systems": [
+      "hr-portal-prod"
+    ]
+  },
+  {
+    "id": "APP-010",
+    "name": "Search Service",
+    "tier": 2,
+    "owning_team": "Commerce Core",
+    "systems": [
+      "search-prod"
+    ]
+  },
+  {
+    "id": "APP-011",
+    "name": "CRM Integration",
+    "tier": 2,
+    "owning_team": "Customer Ops",
+    "systems": [
+      "crm-integration-prod"
+    ]
+  },
+  {
+    "id": "APP-012",
+    "name": "Pricing Engine",
+    "tier": 1,
+    "owning_team": "Commerce Core",
+    "systems": [
+      "pricing-prod"
+    ]
+  },
+  {
+    "id": "APP-013",
+    "name": "SAP S/4HANA Finance",
+    "tier": 1,
+    "owning_team": "SAP Finance",
+    "systems": [
+      "SAP-S4P"
+    ]
+  },
+  {
+    "id": "APP-014",
+    "name": "SAP EWM Logistics",
+    "tier": 2,
+    "owning_team": "SAP Logistics",
+    "systems": [
+      "SAP-EWP"
+    ]
+  },
+  {
+    "id": "APP-015",
+    "name": "SAP HANA Platform",
+    "tier": 1,
+    "owning_team": "System Cleaning Team",
+    "systems": [
+      "SAP-HANA-PRD-DB"
+    ]
+  }
+]

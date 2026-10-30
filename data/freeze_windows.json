@@ -1,0 +1,35 @@
+[
+  {
+    "id": "FRZ-01",
+    "name": "Quarter-end financial close",
+    "start": "2026-09-28T00:00",
+    "end": "2026-10-03T12:00",
+    "scope": "applications",
+    "applications": [
+      "Payments Gateway",
+      "Pricing Engine",
+      "Order Management",
+      "SAP S/4HANA Finance"
+    ],
+    "reason": "Finance systems locked while the quarter's books are closed."
+  },
+  {
+    "id": "FRZ-02",
+    "name": "Mega Sale event",
+    "start": "2026-11-13T00:00",
+    "end": "2026-11-16T06:00",
+    "scope": "tier",
+    "tiers": [
+      1
+    ],
+    "reason": "Peak traffic event; all Tier 1 systems frozen."
+  },
+  {
+    "id": "FRZ-03",
+    "name": "Year-end freeze",
+    "start": "2026-12-14T00:00",
+    "end": "2027-01-05T00:00",
+    "scope": "all",
+    "reason": "Reduced staffing over the holidays; no normal changes."
+  }
+]

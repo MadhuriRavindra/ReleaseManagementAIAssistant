@@ -1,0 +1,197 @@
+[
+  {
+    "type": "Weekly",
+    "release_id": "WR-2026-1003",
+    "name": "Weekly release \u00b7 Sat 03 Oct",
+    "intake_days": [
+      "2026-09-28",
+      "2026-09-29",
+      "2026-09-30",
+      "2026-10-01"
+    ],
+    "final_cutoff": "2026-10-01T15:00",
+    "regression_day": "2026-10-02",
+    "approval_deadline": "2026-10-02T18:00",
+    "p_start": "2026-10-03T08:00",
+    "p_end": "2026-10-03T10:00",
+    "release_manager": "Sophie Wagner",
+    "change_ids": [
+      "CR-2003",
+      "CR-2005",
+      "CR-2009",
+      "CR-2012",
+      "CR-2015",
+      "CR-2016"
+    ]
+  },
+  {
+    "type": "Weekly",
+    "release_id": "WR-2026-1010",
+    "name": "Weekly release \u00b7 Sat 10 Oct",
+    "intake_days": [
+      "2026-10-05",
+      "2026-10-06",
+      "2026-10-07",
+      "2026-10-08"
+    ],
+    "final_cutoff": "2026-10-08T15:00",
+    "regression_day": "2026-10-09",
+    "approval_deadline": "2026-10-09T18:00",
+    "p_start": "2026-10-10T08:00",
+    "p_end": "2026-10-10T10:00",
+    "release_manager": "Aditya Kulkarni",
+    "change_ids": [
+      "CR-2018",
+      "CR-2019",
+      "CR-2023",
+      "CR-2027",
+      "CR-2031",
+      "CR-2033",
+      "CR-2036",
+      "CR-2039",
+      "CR-2042",
+      "CR-2043",
+      "CR-2044",
+      "CR-2045",
+      "CR-2048",
+      "CR-2052",
+      "CR-2156",
+      "CR-2158",
+      "CR-2161",
+      "CR-2164",
+      "CR-2172"
+    ]
+  },
+  {
+    "type": "Weekly",
+    "release_id": "WR-2026-1017",
+    "name": "Weekly release \u00b7 Sat 17 Oct",
+    "intake_days": [
+      "2026-10-12",
+      "2026-10-13",
+      "2026-10-14",
+      "2026-10-15"
+    ],
+    "final_cutoff": "2026-10-15T15:00",
+    "regression_day": "2026-10-16",
+    "approval_deadline": "2026-10-16T18:00",
+    "p_start": "2026-10-17T08:00",
+    "p_end": "2026-10-17T10:00",
+    "release_manager": "Neha Bhat",
+    "change_ids": [
+      "CR-2094",
+      "CR-2098",
+      "CR-2102",
+      "CR-2104",
+      "CR-2107",
+      "CR-2110"
+    ]
+  },
+  {
+    "type": "Weekly",
+    "release_id": "WR-2026-1024",
+    "name": "Weekly release \u00b7 Sat 24 Oct",
+    "intake_days": [
+      "2026-10-19",
+      "2026-10-20",
+      "2026-10-21",
+      "2026-10-22"
+    ],
+    "final_cutoff": "2026-10-22T15:00",
+    "regression_day": "2026-10-23",
+    "approval_deadline": "2026-10-23T18:00",
+    "p_start": "2026-10-24T08:00",
+    "p_end": "2026-10-24T10:00",
+    "release_manager": "Sophie Wagner",
+    "change_ids": [
+      "CR-2111",
+      "CR-2113",
+      "CR-2114",
+      "CR-2118",
+      "CR-2122",
+      "CR-2125"
+    ]
+  },
+  {
+    "type": "Monthly",
+    "release_id": "MR-2026-10",
+    "name": "Monthly release \u00b7 October 2026",
+    "d1": "2026-10-06T23:59",
+    "extraction": "2026-10-07T10:00",
+    "a_deploy": "2026-10-12T09:00",
+    "regression_start": "2026-10-12T14:00",
+    "regression_mid": "2026-10-19T09:00",
+    "go_no_go": "2026-10-24T12:00",
+    "comms_deadline": "2026-10-23T00:00",
+    "p_start": "2026-10-25T00:00",
+    "p_end": "2026-10-25T06:00",
+    "release_manager": "Neha Bhat",
+    "change_ids": [
+      "CR-2056",
+      "CR-2057",
+      "CR-2059",
+      "CR-2061",
+      "CR-2064",
+      "CR-2068",
+      "CR-2070",
+      "CR-2073",
+      "CR-2076",
+      "CR-2079",
+      "CR-2080",
+      "CR-2082",
+      "CR-2083",
+      "CR-2084",
+      "CR-2088",
+      "CR-2092",
+      "CR-2159",
+      "CR-2168"
+    ]
+  },
+  {
+    "type": "Weekly",
+    "release_id": "WR-2026-1031",
+    "name": "Weekly release \u00b7 Sat 31 Oct",
+    "intake_days": [
+      "2026-10-26",
+      "2026-10-27",
+      "2026-10-28",
+      "2026-10-29"
+    ],
+    "final_cutoff": "2026-10-29T15:00",
+    "regression_day": "2026-10-30",
+    "approval_deadline": "2026-10-30T18:00",
+    "p_start": "2026-10-31T08:00",
+    "p_end": "2026-10-31T10:00",
+    "release_manager": "Aditya Kulkarni",
+    "change_ids": [
+      "CR-2127",
+      "CR-2130",
+      "CR-2132",
+      "CR-2134",
+      "CR-2136",
+      "CR-2140"
+    ]
+  },
+  {
+    "type": "Monthly",
+    "release_id": "MR-2026-11",
+    "name": "Monthly release \u00b7 November 2026",
+    "d1": "2026-11-10T23:59",
+    "extraction": "2026-11-11T10:00",
+    "a_deploy": "2026-11-16T09:00",
+    "regression_start": "2026-11-16T14:00",
+    "regression_mid": "2026-11-23T09:00",
+    "go_no_go": "2026-11-28T12:00",
+    "comms_deadline": "2026-11-27T00:00",
+    "p_start": "2026-11-29T00:00",
+    "p_end": "2026-11-29T06:00",
+    "release_manager": "Sophie Wagner",
+    "change_ids": [
+      "CR-2141",
+      "CR-2144",
+      "CR-2146",
+      "CR-2148",
+      "CR-2152"
+    ]
+  }
+]

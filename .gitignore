@@ -1,0 +1,10 @@
+.env
+*.xlsx
+*.zip
+*.docx
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+agents/
+.streamlit/secrets.toml

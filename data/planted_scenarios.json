@@ -1,0 +1,261 @@
+[
+  {
+    "change_id": "CR-2018",
+    "release": "WR-2026-1010",
+    "scenario": "Ready last Friday, enters Monday's A",
+    "expected_outcome": "Deployed to P",
+    "expected_rule": null
+  },
+  {
+    "change_id": "CR-2019",
+    "release": "WR-2026-1010",
+    "scenario": "Clean enhancement",
+    "expected_outcome": "Deployed to P",
+    "expected_rule": null
+  },
+  {
+    "change_id": "CR-2023",
+    "release": "WR-2026-1010",
+    "scenario": "Clean enhancement",
+    "expected_outcome": "Deployed to P",
+    "expected_rule": null
+  },
+  {
+    "change_id": "CR-2027",
+    "release": "WR-2026-1010",
+    "scenario": "Accepted 50 min before cutoff",
+    "expected_outcome": "Deployed to P",
+    "expected_rule": null
+  },
+  {
+    "change_id": "CR-2031",
+    "release": "WR-2026-1010",
+    "scenario": "A deployment failure",
+    "expected_outcome": "Moved out",
+    "expected_rule": "WRC-03"
+  },
+  {
+    "change_id": "CR-2033",
+    "release": "WR-2026-1010",
+    "scenario": "Missed Tuesday's cutoff, rolls into Wednesday's A",
+    "expected_outcome": "Deployed to P",
+    "expected_rule": null
+  },
+  {
+    "change_id": "CR-2036",
+    "release": "WR-2026-1010",
+    "scenario": "Emergency fix via weekly release",
+    "expected_outcome": "Deployed to P",
+    "expected_rule": null
+  },
+  {
+    "change_id": "CR-2039",
+    "release": "WR-2026-1010",
+    "scenario": "Clean enhancement",
+    "expected_outcome": "Deployed to P",
+    "expected_rule": null
+  },
+  {
+    "change_id": "CR-2042",
+    "release": "WR-2026-1010",
+    "scenario": "Downtime change sent to weekly",
+    "expected_outcome": "Moved out",
+    "expected_rule": "WRC-01"
+  },
+  {
+    "change_id": "CR-2043",
+    "release": "WR-2026-1010",
+    "scenario": "Dependent change sent to weekly",
+    "expected_outcome": "Moved out",
+    "expected_rule": "WRC-01"
+  },
+  {
+    "change_id": "CR-2044",
+    "release": "WR-2026-1010",
+    "scenario": "Clean enhancement",
+    "expected_outcome": "Deployed to P",
+    "expected_rule": null
+  },
+  {
+    "change_id": "CR-2045",
+    "release": "WR-2026-1010",
+    "scenario": "Regression failure",
+    "expected_outcome": "Moved out",
+    "expected_rule": "WRC-04"
+  },
+  {
+    "change_id": "CR-2048",
+    "release": "WR-2026-1010",
+    "scenario": "User approval not given by Friday",
+    "expected_outcome": "Moved out",
+    "expected_rule": "WRC-05"
+  },
+  {
+    "change_id": "CR-2052",
+    "release": "WR-2026-1010",
+    "scenario": "Ready after the Thursday 15:00 cutoff",
+    "expected_outcome": "Moved out",
+    "expected_rule": "WRC-02"
+  },
+  {
+    "change_id": "CR-2056",
+    "release": "MR-2026-10",
+    "scenario": "SAP SPS, 3h downtime",
+    "expected_outcome": "Deployed to P",
+    "expected_rule": null
+  },
+  {
+    "change_id": "CR-2057",
+    "release": "MR-2026-10",
+    "scenario": "Regression failure, week 1",
+    "expected_outcome": "Moved out",
+    "expected_rule": "MRC-06"
+  },
+  {
+    "change_id": "CR-2059",
+    "release": "MR-2026-10",
+    "scenario": "Its dependency failed regression",
+    "expected_outcome": "Moved out",
+    "expected_rule": "DEP-01"
+  },
+  {
+    "change_id": "CR-2061",
+    "release": "MR-2026-10",
+    "scenario": "System cleaning, 5.5h downtime",
+    "expected_outcome": "Deployed to P",
+    "expected_rule": null
+  },
+  {
+    "change_id": "CR-2064",
+    "release": "MR-2026-10",
+    "scenario": "Does not fit the 6h window after cleaning",
+    "expected_outcome": "Moved out",
+    "expected_rule": "MRC-04"
+  },
+  {
+    "change_id": "CR-2068",
+    "release": "MR-2026-10",
+    "scenario": "Not approved by user at Go/No-Go",
+    "expected_outcome": "Moved out",
+    "expected_rule": "MRC-07"
+  },
+  {
+    "change_id": "CR-2070",
+    "release": "MR-2026-10",
+    "scenario": "Its dependency was not approved",
+    "expected_outcome": "Moved out",
+    "expected_rule": "DEP-01"
+  },
+  {
+    "change_id": "CR-2073",
+    "release": "MR-2026-10",
+    "scenario": "A deployment failure",
+    "expected_outcome": "Moved out",
+    "expected_rule": "MRC-05"
+  },
+  {
+    "change_id": "CR-2076",
+    "release": "MR-2026-10",
+    "scenario": "Downtime change",
+    "expected_outcome": "Deployed to P",
+    "expected_rule": null
+  },
+  {
+    "change_id": "CR-2079",
+    "release": "MR-2026-10",
+    "scenario": "Downtime change",
+    "expected_outcome": "Deployed to P",
+    "expected_rule": null
+  },
+  {
+    "change_id": "CR-2080",
+    "release": "MR-2026-10",
+    "scenario": "Runs first; CRM change waits for it",
+    "expected_outcome": "Deployed to P",
+    "expected_rule": null
+  },
+  {
+    "change_id": "CR-2082",
+    "release": "MR-2026-10",
+    "scenario": "Healthy dependency: scheduled after the Kafka upgrade",
+    "expected_outcome": "Deployed to P",
+    "expected_rule": null
+  },
+  {
+    "change_id": "CR-2083",
+    "release": "MR-2026-10",
+    "scenario": "Project deployment",
+    "expected_outcome": "Deployed to P",
+    "expected_rule": null
+  },
+  {
+    "change_id": "CR-2084",
+    "release": "MR-2026-10",
+    "scenario": "Downtime change",
+    "expected_outcome": "Deployed to P",
+    "expected_rule": null
+  },
+  {
+    "change_id": "CR-2088",
+    "release": "MR-2026-10",
+    "scenario": "Ready after D1",
+    "expected_outcome": "Moved out",
+    "expected_rule": "MRC-02"
+  },
+  {
+    "change_id": "CR-2092",
+    "release": "MR-2026-10",
+    "scenario": "Downtime comms never sent",
+    "expected_outcome": "Moved out",
+    "expected_rule": "DWN-02"
+  },
+  {
+    "change_id": "CR-2156",
+    "release": "WR-2026-1010",
+    "scenario": "Status still New at the cutoff",
+    "expected_outcome": "Moved out",
+    "expected_rule": "WRC-02"
+  },
+  {
+    "change_id": "CR-2158",
+    "release": "WR-2026-1010",
+    "scenario": "In progress but CAB approved = No",
+    "expected_outcome": "Moved out",
+    "expected_rule": "WRC-02"
+  },
+  {
+    "change_id": "CR-2159",
+    "release": "MR-2026-10",
+    "scenario": "CAB approved = No at D1",
+    "expected_outcome": "Moved out",
+    "expected_rule": "MRC-02"
+  },
+  {
+    "change_id": "CR-2161",
+    "release": "WR-2026-1010",
+    "scenario": "No release note or TR list attached",
+    "expected_outcome": "Moved out",
+    "expected_rule": "CHG-04"
+  },
+  {
+    "change_id": "CR-2164",
+    "release": "WR-2026-1010",
+    "scenario": "Approved to P = Yes but Status never set to Ready for release",
+    "expected_outcome": "Moved out",
+    "expected_rule": "WRC-05"
+  },
+  {
+    "change_id": "CR-2168",
+    "release": "MR-2026-10",
+    "scenario": "Rev-Trac import RC 8 on Acceptance",
+    "expected_outcome": "Moved out",
+    "expected_rule": "MRC-05"
+  },
+  {
+    "change_id": "CR-2172",
+    "release": "WR-2026-1010",
+    "scenario": "Carried over and already Deployed to A: not redeployed to A, still needs approval",
+    "expected_outcome": "Deployed to P",
+    "expected_rule": null
+  }
+]

@@ -1,0 +1,138 @@
+[
+  {
+    "incident_id": "INC-5000",
+    "application": "Pricing Engine",
+    "priority": "P2",
+    "opened_at": "2026-09-10T13:00",
+    "short_description": "Pricing Engine: errors after deployment of CR-1107",
+    "caused_by_change": null
+  },
+  {
+    "incident_id": "INC-5007",
+    "application": "Customer Portal",
+    "priority": "P3",
+    "opened_at": "2026-06-22T16:00",
+    "short_description": "Customer Portal: errors after deployment of CR-1149",
+    "caused_by_change": null
+  },
+  {
+    "incident_id": "INC-5014",
+    "application": "SAP EWM Logistics",
+    "priority": "P3",
+    "opened_at": "2026-07-05T11:00",
+    "short_description": "SAP EWM Logistics: errors after deployment of CR-1156",
+    "caused_by_change": "CR-1156"
+  },
+  {
+    "incident_id": "INC-5021",
+    "application": "Payments Gateway",
+    "priority": "P3",
+    "opened_at": "2026-08-27T12:00",
+    "short_description": "Payments Gateway: errors after deployment of CR-1212",
+    "caused_by_change": "CR-1212"
+  },
+  {
+    "incident_id": "INC-5028",
+    "application": "CRM Integration",
+    "priority": "P4",
+    "opened_at": "2026-07-22T18:00",
+    "short_description": "CRM Integration: errors after deployment of CR-1219",
+    "caused_by_change": "CR-1219"
+  },
+  {
+    "incident_id": "INC-5035",
+    "application": "Pricing Engine",
+    "priority": "P3",
+    "opened_at": "2026-07-11T17:00",
+    "short_description": "Pricing Engine: errors after deployment of CR-1233",
+    "caused_by_change": "CR-1233"
+  },
+  {
+    "incident_id": "INC-5042",
+    "application": "Mobile App Backend",
+    "priority": "P3",
+    "opened_at": "2026-08-06T11:00",
+    "short_description": "Mobile App Backend: errors after deployment of CR-1254",
+    "caused_by_change": "CR-1254"
+  },
+  {
+    "incident_id": "INC-5049",
+    "application": "SAP S/4HANA Finance",
+    "priority": "P2",
+    "opened_at": "2026-09-03T13:00",
+    "short_description": "SAP S/4HANA Finance: errors after deployment of CR-1296",
+    "caused_by_change": "CR-1296"
+  },
+  {
+    "incident_id": "INC-5056",
+    "application": "Order Management",
+    "priority": "P3",
+    "opened_at": "2026-07-01T15:00",
+    "short_description": "Order Management: errors after deployment of CR-1324",
+    "caused_by_change": "CR-1324"
+  },
+  {
+    "incident_id": "INC-5063",
+    "application": "CRM Integration",
+    "priority": "P2",
+    "opened_at": "2026-08-07T16:00",
+    "short_description": "CRM Integration: errors after deployment of CR-1345",
+    "caused_by_change": "CR-1345"
+  },
+  {
+    "incident_id": "INC-5070",
+    "application": "Search Service",
+    "priority": "P2",
+    "opened_at": "2026-08-27T06:00",
+    "short_description": "Search Service: errors after deployment of CR-1359",
+    "caused_by_change": null
+  },
+  {
+    "incident_id": "INC-5077",
+    "application": "Inventory API",
+    "priority": "P4",
+    "opened_at": "2026-06-15T15:00",
+    "short_description": "Inventory API: errors after deployment of CR-1380",
+    "caused_by_change": null
+  },
+  {
+    "incident_id": "INC-5084",
+    "application": "Notification Service",
+    "priority": "P2",
+    "opened_at": "2026-07-31T17:00",
+    "short_description": "Notification Service: errors after deployment of CR-1387",
+    "caused_by_change": null
+  },
+  {
+    "incident_id": "INC-5091",
+    "application": "Inventory API",
+    "priority": "P2",
+    "opened_at": "2026-06-05T04:00",
+    "short_description": "Inventory API: errors after deployment of CR-1408",
+    "caused_by_change": null
+  },
+  {
+    "incident_id": "INC-5098",
+    "application": "Customer Portal",
+    "priority": "P4",
+    "opened_at": "2026-07-11T13:00",
+    "short_description": "Customer Portal: errors after deployment of CR-1443",
+    "caused_by_change": null
+  },
+  {
+    "incident_id": "INC-5105",
+    "application": "HR Portal",
+    "priority": "P3",
+    "opened_at": "2026-06-06T14:00",
+    "short_description": "HR Portal: errors after deployment of CR-1450",
+    "caused_by_change": null
+  },
+  {
+    "incident_id": "INC-5112",
+    "application": "CRM Integration",
+    "priority": "P2",
+    "opened_at": "2026-08-16T16:00",
+    "short_description": "CRM Integration: errors after deployment of CR-1485",
+    "caused_by_change": null
+  }
+]

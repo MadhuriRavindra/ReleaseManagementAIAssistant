@@ -1,0 +1,6 @@
+streamlit
+pandas
+groq
+pytest
+python-docx
+openpyxl
