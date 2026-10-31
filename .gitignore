@@ -8,3 +8,4 @@ __pycache__/
 .pytest_cache/
 agents/
 .streamlit/secrets.toml
+.streamlit/secrets.toml.example
