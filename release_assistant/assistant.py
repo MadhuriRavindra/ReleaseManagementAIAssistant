@@ -48,6 +48,10 @@ Answer ONLY from the CONTEXT. Rules:
 - Outcomes (deployed / moved out, and why) come from a deterministic release engine.
   Never change or invent an outcome; explain it.
 - Always cite change IDs (e.g. CR-2031), release IDs and policy rule IDs (e.g. WRC-05).
+  Cite a policy rule ID only if it appears in the CONTEXT.
+- If the CONTEXT has a "note" saying no change or release ID was named, and the question is
+  about a specific change, approval or sign-off, ask which change or release ID they mean.
+  Do not answer from the default releases.
 - If the context does not contain the answer, say so plainly.
 - Be concise and practical, like an experienced release manager briefing CAB."""
 
@@ -170,6 +174,13 @@ def build_context(question, data, minimal=False):
     context = {"releases_in_question": releases, "changes_in_question": focus,
                "policy_rules": policy, "all_releases": overview}
 
+    # Tell the model when the releases above are only defaults, not what the user named
+    named = (re.search(r"(?:WR-\d{4}-\d{4}|MR-\d{4}-\d{2}|CR[-\s]?\d{3,5})", question.upper())
+             or "week" in question.lower() or "month" in question.lower())
+    if not named:
+        context["note"] = ("No change or release ID was named in the question; the releases "
+                           "below are demo defaults, not what the user asked about.")
+
     def dump():
         return json.dumps(context, separators=(",", ":"), default=str, ensure_ascii=False)
 
@@ -201,6 +212,13 @@ def _is_too_large(err):
     return code == 413 or "too large" in str(err).lower() or "tokens per minute" in str(err)
 
 
+def _unsupported_citations(reply, context):
+    """Policy rule IDs cited in the reply that do not appear in the context sent to the model."""
+    normal = reply.replace("\u2011", "-").replace("\u2010", "-").replace("\u2013", "-")
+    cited = set(re.findall(r"\b[A-Z]{3}-\d{2}[A-Z]?\b", normal))
+    return sorted(c for c in cited if c not in context)
+
+
 def answer(question, data, api_key, model=None, history=None):
     """Returns (reply, sources, model_used). Falls back to another model if the chosen one
     is not available to this key, and retries with a smaller context if the request is
@@ -217,7 +235,12 @@ def answer(question, data, api_key, model=None, history=None):
             {"role": "user", "content": f"CONTEXT:\n{context}\n\nQUESTION: {question}"}]
         resp = client.chat.completions.create(model=m, messages=messages, temperature=0.1,
                                               max_tokens=700)
-        return resp.choices[0].message.content, sources
+        reply = resp.choices[0].message.content
+        unsupported = _unsupported_citations(reply, context)
+        if unsupported:
+            reply += (f"\n\n_Check: {', '.join(unsupported)} is cited above but is not in the "
+                      "retrieved context._")
+        return reply, sources
 
     tried, candidates = [], [model or DEFAULT_MODEL]
     while candidates:
