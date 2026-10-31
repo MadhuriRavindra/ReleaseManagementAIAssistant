@@ -5,7 +5,7 @@
 
 ## MRC-01 Scope
 
-The monthly release carries downtime changes, **system cleaning activities** (performed by the System Cleaning Team, typically 5 to 5.5 hours of downtime), project deployments and changes with dependencies. Changes that only need the weekly route may also be included.
+The monthly release carries downtime changes, **system cleaning activities** (performed by the System Cleaning Team, typically 6 to 6.5 hours of downtime), project deployments and changes with dependencies. Changes that only need the weekly route may also be included.
 
 ## MRC-02 D1: ready in ServiceNow
 
@@ -29,8 +29,19 @@ After the A deployment there are **two weeks of regression testing**. A change t
 
 ## MRC-07 Go/No-Go
 
-On the **Saturday before the Production window (12:00 IST)** the Release Manager holds Go/No-Go. Every change needs **Approved to P = Yes** and **Status = Ready for release**, and, if it causes downtime, confirmed downtime communication (see DWN-02). A change that does not meet this is moved out with the reason "Not approved by user". The Release Manager then hands over the segregated TR list for Production (see TRH-04).
+On the **Thursday before the Production window (12:00 IST)** the Release Manager holds Go/No-Go. Every change needs **Approved to P = Yes** and **Status = Ready for release**, and, if it causes downtime, confirmed downtime communication (see DWN-02). A change that does not meet this is moved out with the reason "Not approved by user". The Go decision is then checked against the actual TR list on Friday (see MRC-07A).
+
+## MRC-07A Friday TR verification
+
+On the **Friday morning before the Production window**, the Release Management team, or the release assistant, extracts the TR list for every change with a Go decision and checks each TR:
+
+1. The TR has already been **imported into Acceptance (A)**.
+2. The TR has been **tested in A**.
+
+A TR that is not in A, or that has not been tested in A, is a **mismatch**. The Release Manager informs the customer, and the TR goes ahead only if the customer decides to proceed. The customer's decision is recorded on the change. Customers typically approve small TRs built late on Thursday, after the Go/No-Go, such as a security change. If the customer does not approve, the change is moved to the next monthly release.
+
+When every mismatch is resolved, the Release Manager hands over the segregated TR list for Production (see TRH-04).
 
 ## MRC-08 Production deployment (cutover)
 
-Production deployment runs on **Sunday 00:00 to 06:00 IST** as a downtime window. The cutover plan sequences the changes: one change at a time per system, and a dependent change starts only after the change it depends on has finished.
+Production deployment runs on **Sunday 00:00 to 07:00 IST** as a downtime window. The cutover plan sequences the changes: one change at a time per system, and a dependent change starts only after the change it depends on has finished.

@@ -11,8 +11,11 @@ Monthly release (ID MR-YYYY-MM, P on the last Sunday of the month):
     Extraction (Wed)    changes downloaded from ServiceNow, scope frozen
     A deployment (Mon)  following Monday, 09:00
     Regression          two weeks on A
-    Go/No-Go (Sat)      approvals by 12:00; downtime comms sent 48h before P
+    Go/No-Go (Thu)      Thursday before P, 12:00; approvals confirmed
+    TR check (Fri)      Friday morning: extract the TR list and verify every TR
+                        is in A and tested in A; mismatches go to the customer
     P deployment (Sun)  00:00-06:00 IST downtime window
+    Downtime comms are sent 48h before P.
 """
 
 import calendar
@@ -23,6 +26,8 @@ WEEKLY_A_DEPLOY = time(16, 0)
 WEEKLY_APPROVAL_DEADLINE = time(18, 0)
 WEEKLY_P_START, WEEKLY_P_END = time(8, 0), time(10, 0)
 MONTHLY_WINDOW_MINUTES = 360
+MONTHLY_GO_NO_GO = time(12, 0)
+MONTHLY_TR_CHECK = time(9, 0)
 
 
 # ------------------------------------------------------------------ weekly
@@ -70,6 +75,8 @@ def monthly_calendar(year, month):
     a_mon = p_sun - timedelta(days=13)
     extraction = a_mon - timedelta(days=5)
     d1 = extraction - timedelta(days=1)
+    thursday = p_sun - timedelta(days=3)     # Go/No-Go
+    friday = p_sun - timedelta(days=2)       # TR check against Acceptance
     return {
         "type": "Monthly",
         "release_id": monthly_id(year, month),
@@ -79,7 +86,8 @@ def monthly_calendar(year, month):
         "a_deploy": datetime.combine(a_mon, time(9, 0)),
         "regression_start": datetime.combine(a_mon, time(14, 0)),
         "regression_mid": datetime.combine(a_mon + timedelta(days=7), time(9, 0)),
-        "go_no_go": datetime.combine(p_sun - timedelta(days=1), time(12, 0)),
+        "go_no_go": datetime.combine(thursday, MONTHLY_GO_NO_GO),
+        "tr_check": datetime.combine(friday, MONTHLY_TR_CHECK),
         "comms_deadline": datetime.combine(p_sun - timedelta(days=2), time(0, 0)),
         "p_start": datetime.combine(p_sun, time(0, 0)),
         "p_end": datetime.combine(p_sun, time(6, 0)),
